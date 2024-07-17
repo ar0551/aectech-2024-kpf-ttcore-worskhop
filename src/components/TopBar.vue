@@ -2,11 +2,13 @@
   <div id="top-bar">
     <div id="title-container">
       <div style="display: flex; align-items: center">
-        <img class="logo-image" alt="Iaac logo" src="../assets/graphics/AECtech_24_Barcelona-Banner_sm.png" />
-        <h2>Grasshopper on the Web</h2>
+        <img class="logo-image" alt="CDTLogo" src="../assets/graphics/CDTeamLogo.png" />
+        <h2>ATP Hackaton 2024</h2>
         <div id="navigation-tabs">
           <div :class="{ 'selected-tab': selectedExample === 0, 'navigation-tab': selectedExample !== 0 }" @click="toggleExample(0)">Example 1</div>
           <div :class="{ 'selected-tab': selectedExample === 1, 'navigation-tab': selectedExample !== 1 }" @click="toggleExample(1)">Example 2</div>
+          <div :class="{ 'selected-tab': selectedExample === 2, 'navigation-tab': selectedExample !== 2 }" @click="toggleExample(2)">Example 3</div>
+          <div :class="{ 'selected-tab': selectedExample === 3, 'navigation-tab': selectedExample !== 3 }" @click="toggleExample(3)">Example 4</div>
         </div>
       </div>
       <DarkModeToggle @update="changeMode" :title="'darkMode'" id="toggle" ></DarkModeToggle>

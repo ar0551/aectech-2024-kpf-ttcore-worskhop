@@ -28,7 +28,7 @@
   
 <script setup>
   import { ref, onBeforeMount, computed } from "vue"
-  import GeometryView from "../components/MinimalisticGeometryView.vue"
+  import GeometryView from "../components/TestGeometryView.vue"
   import Slider from '../components/Slider.vue'
   import Dropdown from "../components/Dropdown.vue"
   

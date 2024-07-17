@@ -5,13 +5,14 @@ import { store } from "@/stores/storeSingleton"
 // Local RhinoCompute endpoint
 RhinoCompute.url = "http://localhost:8081/"
 
-let rhino, doc, res
+let rhino, doc, res, def
 
 async function runCompute(data, path) {
   store.computing = true;
-  let def = await loadGH(path);
+  def = await loadGH(path);
   res = await compute(def, data);
   doc = createDoc(res);
+  console.log(doc);
 
   //downlod 3dm model, optionally
   //download(doc)
